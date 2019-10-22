@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+   
+}
+
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li a {
+    color:white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header ul li a:hover{
+    background: #423c3ce8;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+} 
+
+#logo {
+    display: block;
+    max-width: 70px;
+}
+
+
+
+#sidebar {
+    width: 23%;
+}
+
+#content {
+     width: 75%;
+}
+
+
+#main {
+    align-items: flex-start;
+}
+
+#sidebar, #content {
+    margin: 15px 0;
+    box-shadow: 0px 0 5px 2px #0000004d;
+    padding: 15px;
+    min-height: 860px;
+}
+
+
+
+#sidebar ul li a {
+    display: block;
+    padding: 10 px 0;
+    color: black;
+    border-bottom: 1px dashed black;
+
+}
+
+#sidebar ul li a:hover {
+    color: #a4c739;
+    border-color: #a4c739;
+}
+
+
+#sidebar ul li:last-child a {
+    border: none;
+}
+
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product {
+    width: 18%;
+    box-shadow: 0 0 4px 1px rgba(149, 155, 153, 0.212);
+    margin-bottom: 15px;
+    padding: 15px;
+
+
+}
+
+.product:hover {
+    -moz-transform: scale(1.02) translate(0px, 9px);
+    -webkit-transform: scale(1.02) translate(0px, 9px);
+    -o-transform: scale(1.02) translate(0px, 9px);
+    -ms-transform: scale(1.02) translate(0px, 9px);
+    transform: scale(1.02) translate(0px, 9px);
+    box-shadow: 0 0 5px 1px #00000087;
+}
+
+.product h2 {
+    margin: 0 0 15px 0;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.p-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-bottom button {
+    background: #a4c739;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+
+.p-bottom span {
+
+    font-weight: bold;
+    font-size: 20px;
+}
+.p-bottom button :hover{
+    background: #a4c739;
+}
+
+
+@media(max-width: 960px) {
+     .product {
+         width: 32%;
+     }
+}
+
+
+
+
+footer {
+    width: 100%;
+    background:#5e5e5e;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .container > div {
+max-width: 250px;
+width: 100%;
+
+}
+
+footer .container {
+    align-items: flex-start;
+}
+
+footer h3 {
+    margin: 0 0 15px 0;
+}
+
+.f-links a {
+    display: block;
+    padding: 0 0 5px 0;
+}
+
+.f-links a:hover {
+    text-decoration: underline;
+}
+
+.form-subscribe, .social-links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-subscribe input {
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 5px;
+} 
+
+.form-subscribe button {    
+    background: #a3c639;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}     
+
+.social-links a {
+    padding: 0 0 15px 0;
+    display: block;
+    font-size: 20px;
+
+}
+
+.social-links {
+    padding-left: 100px;
+}
+
+@media(max-width: 725px) {
+    footer > div.container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    footer > div.container > div {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 15px;
+
+    }
+    header .container {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul {
+        width: 100%;
+        margin-top: 125px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product {
+            width: 48%;
+    }
+
+
+    #sidebar {
+        width: 33%;
+    }
+
+    #content {
+        width: 65%;
+    }
+
+    #sidebar, #content {
+        min-height: auto;
+    }
+}
+
+@media(max-width: 725px) {
+    #sidebar {
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+
+
+
+    #sidebar, #content {
+        text-align: center;
+    }
+}
+
+
