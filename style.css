@@ -1,12 +1,16 @@
 *{
     box-sizing: border-box;
+
+    
 }
 
 
 
 
+
+
 header {
-    background: #37a989;
+    background: #ffffff;
     color: white;
     padding: 15px;
    
@@ -15,6 +19,12 @@ header {
 body, ul{
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-image: url(background_image.jpg);
+
+   
 }
 
 
@@ -44,6 +54,8 @@ header ul li a {
     text-transform: capitalize;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    
+    cursor: url(cursor_image.png);
 
 }
 
@@ -52,11 +64,12 @@ header ul li a:hover{
 }
 
 
-
 header ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+
     
 } 
 
@@ -95,6 +108,11 @@ header ul {
     color: black;
     border-bottom: 1px dashed black;
 
+    animation-name: spin;   /*   анимация сайдбара */
+
+    animation-duration: 3s;   /*   анимация сайдбара */
+
+    animation-timing-function: ease-in-out;
 }
 
 #sidebar ul li a:hover {
@@ -162,6 +180,22 @@ header ul {
 .p-bottom button :hover{
     background: #a4c739;
 }
+
+
+@keyframes spin {                   /*   анимация сайдбара */
+    0% {
+       transform: rotate(0deg);
+    }
+
+100% {
+       transform: rotate(360deg);
+     }
+
+
+}                                   /*   анимация сайдбара */
+
+
+
 
 
 @media(max-width: 960px) {
