@@ -17,7 +17,7 @@ header {
 }
 
 p {
-    color: #822e15;
+    color: #ff5e00;
 }
 body, ul{
     margin: 0;
@@ -168,7 +168,7 @@ header ul {
 
 .product h2 {
     margin: 0 0 15px 0;
-    color: #822e15;
+    color: #ff5e00;
 }
 
 .product img {
@@ -196,7 +196,7 @@ header ul {
 }
 
 .p-bottom span {
-    color: #822e15;;
+    color: #ff9900;
     font-weight: bold;
     font-size: 20px;
 }
